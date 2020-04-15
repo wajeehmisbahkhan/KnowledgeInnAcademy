@@ -1,0 +1,31 @@
+.flip-container {
+	cursor: pointer;
+    perspective: 600;
+}
+
+.flipper {
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.flipper:hover {
+    transform: rotateY(180deg);
+}
+.flipper a {
+    text-decoration: none;
+    color: inherit;
+}
+.flipper .side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* back, initially hidden pane */
+.back {
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
